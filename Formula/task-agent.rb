@@ -5,23 +5,23 @@
 class TaskAgent < Formula
   desc "YOLO AI Task Executor for Asana — Bubble Tea TUI"
   homepage "https://github.com/TheCoolRobot/task-agent"
-  version "0.1.0-beta"
+  version "0.1.1"
   license "MIT"
 
   depends_on "thecoolrobot/asana-cli/asana-cli"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TheCoolRobot/task-agent/releases/download/v0.1.0-beta/task-agent_darwin_x86_64.tar.gz"
-      sha256 "5b826522cbc6ca094973efc4f200099faf963a770821ea913d84cd7169ba20f7"
+      url "https://github.com/TheCoolRobot/task-agent/releases/download/v0.1.1/task-agent_darwin_x86_64.tar.gz"
+      sha256 "cc9cf0e33bb754aeb9f163067f2156420c4fc5994b26ebc4229d5c35208aeab0"
 
       def install
         bin.install "task-agent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TheCoolRobot/task-agent/releases/download/v0.1.0-beta/task-agent_darwin_arm64.tar.gz"
-      sha256 "e56d2465b56092bad1cf2c6f93c471e39af6a54bf5e0e33fd33b081f4c63b8c7"
+      url "https://github.com/TheCoolRobot/task-agent/releases/download/v0.1.1/task-agent_darwin_arm64.tar.gz"
+      sha256 "62fdda07d3b216a445aa5843a0da210d841ec93752a77c47c2d4eaed7e2a9155"
 
       def install
         bin.install "task-agent"
@@ -31,15 +31,15 @@ class TaskAgent < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCoolRobot/task-agent/releases/download/v0.1.0-beta/task-agent_linux_x86_64.tar.gz"
-      sha256 "9de71d62cfdb6ca8d76e150f16e6c7b8eca1ee263cfdaf461214fadd42641beb"
+      url "https://github.com/TheCoolRobot/task-agent/releases/download/v0.1.1/task-agent_linux_x86_64.tar.gz"
+      sha256 "464ac8c1b3c2eb4689ccdc6f3c132babc16e6ff86f5c468e7977a2cdcd8cb6ff"
       def install
         bin.install "task-agent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCoolRobot/task-agent/releases/download/v0.1.0-beta/task-agent_linux_arm64.tar.gz"
-      sha256 "d2eb1f9cea5773803a482aa831b0c7df69ab0102007878648482ac02a9d7644b"
+      url "https://github.com/TheCoolRobot/task-agent/releases/download/v0.1.1/task-agent_linux_arm64.tar.gz"
+      sha256 "39a65260653a942b288617167faa552aa301dc3e84a5d5888c0dc740fe9cb3d8"
       def install
         bin.install "task-agent"
       end
